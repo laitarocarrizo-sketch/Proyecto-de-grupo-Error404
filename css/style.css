@@ -1,0 +1,17 @@
+.logo {
+  max-width: 70px;
+}
+:root {
+  --bs-nabar-footer: #f3c178 ;
+  --bs-botones: #d8f1a0;
+  --bs-titulo:#Fe5e41;
+  --bs-cards:#00a878;
+}
+.bg-nabar-footer {
+  background-color: var(--bs-nabar-footer);
+}
+
+.boton{
+  background-color: var(--bs-botones) ;
+  border: 1px solid var(--bs-botones);
+}
