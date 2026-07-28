@@ -94,3 +94,7 @@ textarea {
   width: 100%;
   height: 500px;
 }
+
+.boton-enviar{
+  background-color: var(--bs-nabar-footer);
+}
