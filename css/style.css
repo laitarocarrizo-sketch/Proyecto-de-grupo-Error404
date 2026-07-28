@@ -29,3 +29,7 @@
   width: 500px;
 }
 }
+
+.boton-enviar{
+  background-color: var(--bs-nabar-footer);
+}
