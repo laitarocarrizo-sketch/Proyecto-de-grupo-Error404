@@ -15,3 +15,13 @@
   background-color: var(--bs-botones) ;
   border: 1px solid var(--bs-botones);
 }
+
+.mapa{
+  width: 330px;
+}
+
+@media(width > 991px){
+.mapa{
+  width: 500px;
+}
+}
