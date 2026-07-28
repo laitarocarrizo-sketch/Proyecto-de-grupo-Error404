@@ -28,15 +28,15 @@ textarea {
   margin: 15px;
 }
 
-.contenedor{
+.contenedor {
   max-width: 100%;
 }
 
-.comida{
+.comida {
   width: 100%;
   height: 500px;
 }
-.tamaño{
+.tamaño {
   max-width: 700px;
   margin: auto;
 }
@@ -48,29 +48,31 @@ textarea {
   height: 70vh;
   object-fit: cover;
 }
-.carta{
+.carta {
   background-color: var(--bs-cards);
 }
 
-.ver-mas{
-  background-color: var(--bs-botones) ;
+.ver-mas {
+  background-color: var(--bs-botones);
   border: 1px solid var(--bs-botones);
 }
-.ver-mas:hover{
-    background-color: var(--bs-botones);
-    color: inherit;
-    border-color: var(--bs-botones);
-.mapa{
+.ver-mas:hover {
+  background-color: var(--bs-botones);
+  color: inherit;
+  border-color: var(--bs-botones);
+}
+.mapa {
   width: 330px;
 }
 
-.form-contacto{
+.form-contacto {
   background-color: var(--bs-botones);
 }
 
-@media(width > 991px){
-.mapa{
-  width: 500px;
+@media (width > 991px) {
+  .mapa {
+    width: 500px;
+  }
 }
 textarea {
   resize: none;
@@ -84,11 +86,11 @@ textarea {
   margin: 15px;
 }
 
-.contenedor{
+.contenedor {
   max-width: 100%;
 }
 
-.comida{
+.comida {
   width: 100%;
   height: 500px;
 }
