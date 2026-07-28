@@ -20,6 +20,10 @@
   width: 330px;
 }
 
+.form-contacto{
+  background-color: var(--bs-botones);
+}
+
 @media(width > 991px){
 .mapa{
   width: 500px;
