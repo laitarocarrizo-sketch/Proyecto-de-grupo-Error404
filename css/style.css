@@ -98,3 +98,10 @@ textarea {
 .boton-enviar{
   background-color: var(--bs-nabar-footer);
 }
+.bicho{
+  max-width: 500px;
+}
+
+.caballerito{
+    width: 100%;
+}
