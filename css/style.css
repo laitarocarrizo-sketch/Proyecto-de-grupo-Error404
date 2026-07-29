@@ -29,3 +29,7 @@
   width: 500px;
 }
 }
+
+.form-login{
+  background-color: var(--bs-botones);
+}

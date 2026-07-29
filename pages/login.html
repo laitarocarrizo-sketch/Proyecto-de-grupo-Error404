@@ -22,7 +22,7 @@
     />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <header>
       <nav class="navbar navbar-expand-lg bg-nabar-footer">
         <div class="container-fluid">
@@ -81,8 +81,37 @@
         </div>
       </nav>
     </header>
-     <main class="flex-grow-1">
-     </main>
+    <main class="flex-grow-1">
+      <form class="form-login border rounded-3 p-3">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <div id="emailHelp" class="form-text">
+            No compartiremos esta informaicon con nadie.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label"
+            >Contraseña</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+      </form>
+    </main>
     <footer>
       <div class="container-fluid bg-nabar-footer py-4">
         <div class="row text-center text-lg-start align-items-center">
