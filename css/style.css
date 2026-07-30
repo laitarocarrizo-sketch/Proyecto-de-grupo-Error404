@@ -122,3 +122,28 @@ textarea {
 .titulo {
   color: var(--bs-titulo);
 }
+
+.form-login{
+  background-color: var(--bs-cards);
+}
+
+.form-login{
+  width: 650px;
+}
+
+@media (width < 991px){
+  .form-login{
+    width: 300px;
+    margin-bottom: 50px;
+  }
+}
+
+.bodyLogin{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondoLoginComida.jpg);
+  width: 100%;
+  height: 100%;
+}
+
+.botonInS{
+  background-color: var(--bs-botones);
+}

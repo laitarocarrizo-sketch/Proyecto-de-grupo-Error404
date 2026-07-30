@@ -22,7 +22,7 @@
     />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
-  <body class="bodyContacto d-flex flex-column min-vh-100">
+  <body class="bodyLogin d-flex flex-column min-vh-100">
     <header>
       <nav class="navbar navbar-expand-lg bg-nabar-footer">
         <div class="container-fluid">
@@ -67,7 +67,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active boton rounded-3 px-4 py-2" href="../pages/login.html"
+                <a class="nav-link active boton rounded-3 px-4 py-2" href="login.html"
                   >Iniciar Sesion</a
                 >
               </li>
@@ -82,70 +82,43 @@
       </nav>
     </header>
     <main class="flex-grow-1">
-      <section class="container my-5">
-        <section class="row">
-          <section class="col-md-6 ubicacion">
-            <h2>Nuestra Ubicación</h2>
-            <iframe class="mapa"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.106067949493!2d-65.20974192526461!3d-26.836578490025683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses!2sar!4v1785276531833!5m2!1ses!2sar"
-              width="500"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-            ></iframe>
-          </section>
-          <section class="col-md-6 formulario">
-            <h2>Contactanos</h2>
-            <form class="form-contacto border rounded-3 p-3">
-              <div class="mb-3">
-                <label for="InputNombre" class="form-label">Nombre</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="InputNombre"
-                  aria-describedby="emailHelp"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-                <div id="emailHelp" class="form-text">
-                  No compartiremos esta informacion con nadie.
-                </div>
-              </div>
-              <div class="mb-3">
-                <label for="InputAsunto" class="form-label">Asunto</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="InputAsunto"
-                  aria-describedby="emailHelp"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="InputMensaje" class="form-label">Mensaje</label>
-                <textarea
-                  type="text"
-                  class="form-control"
-                  id="InputMensaje"
-                  aria-describedby="emailHelp"
-                >
-                </textarea>
-              </div>
-              <div class="d-flex justify-content-end"> 
-                <button type="submit" class="btn boton-enviar">Enviar</button>
-              </div>
-            </form>
-          </section>
-        </section>
-      </section>
+      <form class="formLogin container form-login border rounded-3 p-3 mt-3">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <div id="emailHelp" class="form-text">
+            No compartiremos esta informaicon con nadie.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label"
+            >Contraseña</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label small" for="exampleCheck1">Recuérdame</label>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="m-2 btn btn-light">Iniciar Sesion con Google
+                <i class="m-2 bi bi-google"></i>
+            </button>
+            <button type="submit" class="btn btn-primary">Iniciar Sesion con Facebook
+                <i class="m-2 bi bi-facebook"></i>
+            </button>
+        </div>
+        <button type="submit" class="botonInS mt-4 btn">Iniciar Sesion</button>
+      </form>
     </main>
     <footer>
       <div class="container-fluid bg-nabar-footer py-4">
