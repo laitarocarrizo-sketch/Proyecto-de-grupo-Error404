@@ -35,7 +35,14 @@
 }
 
 .form-login{
-  width: 450px;
+  width: 500px;
+}
+
+@media (width < 991px){
+  .form-login{
+    width: 300px;
+    margin-bottom: 50px;
+  }
 }
 
 .bodyLogin{
@@ -43,3 +50,4 @@
   width: 100%;
   height: 100%;
 }
+
