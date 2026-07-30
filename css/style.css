@@ -95,7 +95,7 @@ textarea {
   height: 500px;
 }
 
-.boton-enviar{
+.boton-enviar {
   background-color: var(--bs-nabar-footer);
 }
 .bicho{
@@ -104,4 +104,21 @@ textarea {
 
 .caballerito{
     width: 100%;
+}
+.persona {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.equipo {
+  width: 100%;
+  max-width: 250px;
+}
+
+.titulo {
+  color: var(--bs-titulo);
 }
