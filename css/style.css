@@ -33,3 +33,7 @@
 .form-login{
   background-color: var(--bs-botones);
 }
+
+.form-login{
+  width: 450px;
+}
