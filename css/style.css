@@ -41,3 +41,14 @@
     color: inherit;
     border-color: var(--bs-botones);
 }
+
+.contenedor-imagen{
+  min-width: 250px;
+  height: 200px;
+} 
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .contenedor-imagen {
+    min-width: 200px;
+  }
+}
