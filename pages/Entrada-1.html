@@ -25,7 +25,7 @@
   <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg bg-nabar-footer">
       <div class="container-fluid">
-        <a class="navbar-brand logo" href="#"
+        <a class="navbar-brand logo" href="../index.html"
           ><img
             class="w-100 d-block rounded-circle"
             src="/img/Logo de cocina.jpg"
@@ -46,34 +46,130 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4 me-4">
             <li class="nav-item">
               <a
-                class="nav-link btn rounded-3 px-4 py-2"
+                class="fw-bold nav-link btn rounded-3 px-4 py-2"
                 aria-current="page"
-                href="#"
+                href="../index.html"
                 >Inicio</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link btn rounded-3 px-4 py-2" href="#">Galeria</a>
+            <li class="fw-bold nav-item">
+              <a class="nav-link btn rounded-3 px-4 py-2" href="./galeria.html"
+                >Galeria</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link btn rounded-3 px-4 py-2" href="#"
+            <li class="fw-bold nav-item">
+              <a
+                class="nav-link btn rounded-3 px-4 py-2"
+                href="./Sobre-nosotros.html"
                 >Sobre nosotros</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link btn rounded-3 px-4 py-2" href="#">Contacto</a>
+            <li class="fw-bold nav-item">
+              <a class="nav-link btn rounded-3 px-4 py-2" href="./contacto.html"
+                >Contacto</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active boton rounded-3 px-4 py-2" href="#"
+              <a
+                class="nav-link active boton rounded-3 px-4 py-2"
+                href="./login.html"
                 >Iniciar Sesion</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active boton rounded-3 px-4 py-2" href="#"
+              <a
+                class="nav-link active boton rounded-3 px-4 py-2"
+                href="#Suscripcion"
+                data-bs-toggle="modal"
                 >Suscripcion</a
               >
             </li>
           </ul>
+        </div>
+        <div>
+          <form action="/pages/Error-404.html">
+            <div
+              class="modal fade"
+              id="Suscripcion"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1
+                      class="modal-title text-center fs-5"
+                      id="exampleModalLabel"
+                    >
+                      Suscripción a nuestro blog
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <h5>
+                        Suscribete para recibir nuestras ultimas entradas.
+                      </h5>
+                    </div>
+                    <div>
+                      <label for="validationDefault01" class="form-label"
+                        >Nombre</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="validationDefault01"
+                        placeholder="Julian"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Email</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="name@example.com"
+                        required
+                      />
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="invalidCheck2"
+                        required
+                      />
+                      <label class="form-check-label" for="invalidCheck2">
+                        Acepto terminos y condiciones
+                      </label>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                      <button type="submit" class="btn btn-primary">
+                        Suscribirse
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </nav>
@@ -82,7 +178,11 @@
         <section class="container">
           <h1 class="display-1 text-center">La Ratatouille</h1>
           <div class="col-12 text-center contenedor">
-            <img src="/img/comida 1.jpg" class="comida my-3 mx-md-2" alt="...">
+            <img
+              src="/img/comida 1.jpg"
+              class="comida my-3 mx-md-2"
+              alt="..."
+            />
           </div>
           <p class="">
             La ratatouille es un plato tradicional originario de la región de
@@ -110,38 +210,42 @@
         <section class="container">
           <div class="row g-4">
             <div class="col-md-6 mb-3">
-              <div class="card my-3">
-                <h3 class="text-center my-3">Deja tu comentario</h3>
-                <div class="mb-3 mx-5">
-                  <label for="Nombre" class="form-label">Nombre</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="Nombre"
-                    placeholder="Ingrese su nombre"
-                  />
-                </div>
-                <div class="mb-3 mx-5">
-                  <label for="exampleFormControlTextarea1" class="form-label"
-                    >Deja tu comentario</label
-                  >
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                  ></textarea>
-                  <div class="text-end my-3">
-                    <a class="btn btn-primary" href="#" role="button"
-                      >Enviar comentario</a
+              <form action="./Error-404.html">
+                <div class="card my-3 carta">
+                  <h3 class="text-center my-3">Deja tu comentario</h3>
+                  <div class="mb-3 mx-5">
+                    <label for="Nombre" class="form-label">Nombre</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="Nombre"
+                      placeholder="Ingrese su nombre"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3 mx-5">
+                    <label for="exampleFormControlTextarea1" class="form-label"
+                      >Deja tu comentario</label
                     >
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                      required
+                    ></textarea>
+                    <div class="text-end my-3">
+                      <button type="submit" class="btn ver-mas">
+                        Enviar comentario
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </form>
             </div>
             <div class="col-md-6">
-              <div class="card my-3">
+              <div class="card carta my-3">
                 <h3 class="ms-4 my-3">Comentarios</h3>
-                <div class="card comentario mx-2 my-2">
+                <div class="card form-contacto comentario mx-2 my-2">
                   <div class="row g-0">
                     <div class="col-md-3">
                       <img
@@ -164,7 +268,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card comentario mx-2 my-2">
+                <div class="card form-contacto comentario mx-2 my-2">
                   <div class="row g-0">
                     <div class="col-md-3">
                       <img
@@ -189,7 +293,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card comentario mx-2 my-2">
+                <div class="card form-contacto comentario mx-2 my-2">
                   <div class="row g-0">
                     <div class="col-md-3">
                       <img
@@ -213,7 +317,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card comentario mx-2 my-2">
+                <div class="card form-contacto comentario mx-2 my-2">
                   <div class="row g-0">
                     <div class="col-md-3">
                       <img
@@ -237,7 +341,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card comentario mx-2 my-2">
+                <div class="card form-contacto comentario mx-2 my-2">
                   <div class="row g-0">
                     <div class="col-md-3">
                       <img
@@ -292,9 +396,15 @@
             <div
               class="d-flex justify-content-center justify-content-lg-end gap-3 me-4"
             >
-              <i class="bi bi-instagram fs-3"></i>
-              <i class="bi bi-facebook fs-3"></i>
-              <i class="bi bi-twitter-x fs-3"></i>
+              <a href="/pages/Error-404.html"
+                ><i class="bi bi-instagram text-black fs-3"></i
+              ></a>
+              <a href="/pages/Error-404.html"
+                ><i class="bi bi-facebook text-black fs-3"></i
+              ></a>
+              <a href="/pages/Error-404.html"
+                ><i class="bi bi-twitter-x text-black fs-3"></i
+              ></a>
             </div>
           </div>
         </div>

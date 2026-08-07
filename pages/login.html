@@ -26,7 +26,7 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-nabar-footer">
         <div class="container-fluid">
-          <a class="navbar-brand logo" href="#"
+          <a class="navbar-brand logo" href="../index.html"
             ><img
               class="w-100 d-block rounded-circle"
               src="/img/Logo de cocina.jpg"
@@ -47,42 +47,143 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4 me-4">
               <li class="nav-item">
                 <a
-                  class="nav-link btn rounded-3 px-4 py-2"
+                  class="fw-bold nav-link btn rounded-3 px-4 py-2"
                   aria-current="page"
                   href="../index.html"
                   >Inicio</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link btn rounded-3 px-4 py-2" href="#">Galeria</a>
+              <li class="fw-bold nav-item">
+                <a
+                  class="nav-link btn rounded-3 px-4 py-2"
+                  href="./galeria.html"
+                  >Galeria</a
+                >
               </li>
-              <li class="nav-item">
-                <a class="nav-link btn rounded-3 px-4 py-2" href="#"
+              <li class="fw-bold nav-item">
+                <a
+                  class="nav-link btn rounded-3 px-4 py-2"
+                  href="./Sobre-nosotros.html"
                   >Sobre nosotros</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link btn rounded-3 px-4 py-2" href="contacto.html"
+              <li class="fw-bold nav-item">
+                <a
+                  class="nav-link btn rounded-3 px-4 py-2"
+                  href="./contacto.html"
                   >Contacto</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active boton rounded-3 px-4 py-2" href="login.html"
+                <a
+                  class="nav-link active boton rounded-3 px-4 py-2"
+                  href="./login.html"
                   >Iniciar Sesion</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active boton rounded-3 px-4 py-2" href="#"
+                <a
+                  class="nav-link active boton rounded-3 px-4 py-2"
+                  href="#Suscripcion"
+                  data-bs-toggle="modal"
                   >Suscripcion</a
                 >
               </li>
             </ul>
           </div>
+          <div>
+            <form action="/pages/Error-404.html">
+              <div
+                class="modal fade"
+                id="Suscripcion"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1
+                        class="modal-title text-center fs-5"
+                        id="exampleModalLabel"
+                      >
+                        Suscripción a nuestro blog
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <h5>
+                          Suscribete para recibir nuestras ultimas entradas.
+                        </h5>
+                      </div>
+                      <div>
+                        <label for="validationDefault01" class="form-label"
+                          >Nombre</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="validationDefault01"
+                          placeholder="Julian"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label"
+                          >Email</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleFormControlInput1"
+                          placeholder="name@example.com"
+                          required
+                        />
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="invalidCheck2"
+                          required
+                        />
+                        <label class="form-check-label" for="invalidCheck2">
+                          Acepto terminos y condiciones
+                        </label>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Cerrar
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                          Suscribirse
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </nav>
     </header>
     <main class="flex-grow-1">
-      <form class="formLogin container form-login border rounded-3 p-3 mt-3">
+      <form
+        action="./Error-404.html"
+        class="formLogin container form-login border rounded-3 p-3 my-3"
+      >
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email</label>
           <input
@@ -90,6 +191,7 @@
             class="form-control"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
+            required
           />
           <div id="emailHelp" class="form-text">
             No compartiremos esta informaicon con nadie.
@@ -103,21 +205,27 @@
             type="password"
             class="form-control"
             id="exampleInputPassword1"
+            required
           />
         </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label small" for="exampleCheck1">Recuérdame</label>
+          <label class="form-check-label small" for="exampleCheck1"
+            >Recuérdame</label
+          >
         </div>
         <div class="text-center">
-            <button type="submit" class="m-2 btn btn-light">Iniciar Sesion con Google
-                <i class="m-2 bi bi-google"></i>
-            </button>
-            <button type="submit" class="btn btn-primary">Iniciar Sesion con Facebook
-                <i class="m-2 bi bi-facebook"></i>
-            </button>
+          <a href="./Error-404.html" class="m-2 btn btn-light">
+            Iniciar Sesión con Google
+            <i class="m-2 bi bi-google"></i>
+          </a>
+
+          <a href="./Error-404.html" class="btn btn-primary">
+            Iniciar Sesión con Facebook
+            <i class="m-2 bi bi-facebook"></i>
+          </a>
         </div>
-        <button type="submit" class="botonInS mt-4 btn">Iniciar Sesion</button>
+        <button type="submit" class="ver-mas mt-4 btn">Iniciar Sesion</button>
       </form>
     </main>
     <footer>
@@ -145,9 +253,15 @@
             <div
               class="d-flex justify-content-center justify-content-lg-end gap-3 me-4"
             >
-              <i class="bi bi-instagram fs-3"></i>
-              <i class="bi bi-facebook fs-3"></i>
-              <i class="bi bi-twitter-x fs-3"></i>
+              <a href="/pages/Error-404.html"
+                ><i class="bi bi-instagram text-black fs-3"></i
+              ></a>
+              <a href="/pages/Error-404.html"
+                ><i class="bi bi-facebook text-black fs-3"></i
+              ></a>
+              <a href="/pages/Error-404.html"
+                ><i class="bi bi-twitter-x text-black fs-3"></i
+              ></a>
             </div>
           </div>
         </div>

@@ -71,6 +71,7 @@ textarea {
   .contenedor-imagen {
     min-width: 200px;
   }
+}
 .ver-mas:hover {
   background-color: var(--bs-botones);
   color: inherit;
