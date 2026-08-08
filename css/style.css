@@ -56,28 +56,29 @@ textarea {
   background-color: var(--bs-botones);
   border: 1px solid var(--bs-botones);
 }
-.ver-mas:hover{
-    background-color: var(--bs-botones);
-    color: inherit;
-    border-color: var(--bs-botones);
-}
-
-.contenedor-imagen{
-  min-width: 250px;
-  height: 200px;
-} 
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .contenedor-imagen {
-    min-width: 200px;
-  }
 .ver-mas:hover {
   background-color: var(--bs-botones);
   color: inherit;
   border-color: var(--bs-botones);
 }
+
+.contenedor-imagen {
+  min-width: 250px;
+  height: 200px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .contenedor-imagen {
+    min-width: 200px;
+  }
+}
+.ver-mas:hover {
+  background-color: var(--bs-botones);
+  color: inherit;
+  border-color: var(--bs-botones);
+}
+
 .mapa {
-.mapa{
   width: 330px;
 }
 
@@ -114,12 +115,12 @@ textarea {
 .boton-enviar {
   background-color: var(--bs-nabar-footer);
 }
-.bicho{
+.bicho {
   max-width: 500px;
 }
 
-.caballerito{
-    width: 100%;
+.caballerito {
+  width: 100%;
 }
 .persona {
   width: 150px;
@@ -139,27 +140,29 @@ textarea {
   color: var(--bs-titulo);
 }
 
-.form-login{
+.form-login {
   background-color: var(--bs-cards);
 }
 
-.form-login{
+.form-login {
   width: 650px;
 }
 
-@media (width < 991px){
-  .form-login{
+@media (width < 991px) {
+  .form-login {
     width: 300px;
     margin-bottom: 50px;
   }
 }
 
-.bodyLogin{
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondoLoginComida.jpg);
+.bodyLogin {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/fondoLoginComida.jpg);
   width: 100%;
   height: 100%;
 }
 
-.botonInS{
+.botonInS {
   background-color: var(--bs-botones);
 }
